@@ -6,15 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Purple Penguin Project</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <header>
-            <div class="menu-bars">
+            <div class="menu-bars" onclick="toggleNav()">
                 <hr>
                 <hr>
                 <hr>
             </div>
-            <nav>
+            <nav class="toggle-nav">
                 <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="vendors.html">Vendors</a>
@@ -26,38 +30,43 @@
             <img src="images/logo-white.svg" alt="Purple Penguin Project Logo">
         </header>
         <main>
-            <section>
-                <div class="boxes">
-                    <h3>Backstory</h3>
+            <section class="boxes about-backstory">
+                <h3>Backstory</h3>
+                <article>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus error laboriosam quasi, amet reiciendis sed voluptatibus, alias porro, magnam vero omnis odit dolore aspernatur? Nobis inventore ea reiciendis blanditiis velit.</p>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
+                </article>
+            </section>
+            <section class="about-hosts">
+                <h3>List of Host Groups</h3>
+                <article>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Host Group</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
+                        </div>
                     </div>
-                    <div class="boxes">
-                        <h3>Host Group</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Host Group</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Host Group</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
+                        </div>
                     </div>
-                    <div class="boxes">
-                        <h3>Host Group</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
-                    </div>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
-                    </div>
-                    <div class="boxes">
-                        <h3>Host Group</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum voluptates soluta, expedita animi eveniet aliquam odio suscipit libero unde illo labore quidem tempore sint nostrum eaque temporibus molestias quia quos!</p>
-                    </div>
-                </div>
+                </article>
             </section>
             <footer>
                 <a href="contact.html">Contact Us!</a>

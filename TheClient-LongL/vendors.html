@@ -6,15 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Purple Penguin Project</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <header>
-            <div class="menu-bars">
+            <div class="menu-bars" onclick="toggleNav()">
                 <hr>
                 <hr>
                 <hr>
             </div>
-            <nav>
+            <nav class="toggle-nav">
                 <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="vendors.html">Vendors</a>
@@ -26,64 +30,74 @@
             <img src="images/logo-white.svg" alt="Purple Penguin Project Logo">
         </header>
         <main>
-            <section>
-                <h2 class="heading">Music</h2>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
+            <section class="music">
+                <h3 class="heading">Music</h3>
+                <article>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
+                </article>
+            </section>
+            <section class="stand-up">
+                <h3 class="heading">Stand-Up Comedy</h3>
+                <article>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                </div>
-                <h2 class="heading">Stand-Up Comedy</h2>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
+                </article>
+            </section>
+            <section class="food">
+                <h3 class="heading">Food</h3>
+                <article>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                    <div class="image-info">
+                        <div class="boxes">
+                            <img src="" alt="">
+                        </div>
+                        <div class="boxes">
+                            <h4>Vendor Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
-                    </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
-                    </div>
-                </div>
-                <h2 class="heading">Food</h2>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
-                    </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
-                    </div>
-                </div>
-                <div class="image-info">
-                    <div class="boxes">
-                        <img src="" alt="">
-                    </div>
-                    <div class="boxes">
-                        <h3>Vendor Name</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus iste mollitia nihil corrupti suscipit facilis. Nihil accusamus atque totam aspernatur in exercitationem illum beatae, officia ad placeat corporis obcaecati.</p>
-                    </div>
-                </div>
+                </article>
             </section>
         </main>
     </body>

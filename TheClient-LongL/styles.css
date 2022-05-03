@@ -1,0 +1,57 @@
+header{
+    background-color: #2B004A;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bars{
+    width: 40px;
+    padding: .5rem;
+}
+.menu-bars hr{
+    margin: .75rem 0;
+    border: 2px solid white;
+}
+header nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 10rem;
+    left: -100%;
+    border: 1px solid #2B004A;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header nav a{
+    display: block;
+    color: #2B004A;
+    text-align: center;
+    text-decoration: none;
+    padding: .5rem;
+    border: 1px solid transparent;
+}
+header nav.show{
+    left: 0;
+}
+h1{
+    font-weight: 900;
+    text-align: center;
+    padding: 0 1rem;
+}
+header img{
+    max-width: 100%;
+    width: 15rem;
+}
+.home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .music, .stand-up, .food, .contact-location, .contact-parking, .contact-hosts{
+    cursor: pointer;
+}
+article{
+    display: none;
+}
+article.show{
+    display: block;
+}
