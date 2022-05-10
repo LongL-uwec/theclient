@@ -11,8 +11,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
         <script src="scripts.js"></script>
     </head>
-    <body>
+    <body class="ticket-donate">
         <header>
+            <div class="overlay toggle-nav"></div>
             <div class="menu-bars" onclick="toggleNav()">
                 <hr>
                 <hr>
@@ -30,28 +31,30 @@
             <img src="images/logo-white.svg" alt="Purple Penguin Project Logo">
         </header>
         <main>
-            <section>
-                <div class="image-info donations">
-                    <div class="boxes">
-                        <h2>Current Donations and Goal</h2>
+            <section class="different">
+                <div class="boxes donations">
+                    <div>
+                        <h3>Current Donations and Goal</h3>
                     </div>
-                    <div class="boxes">
+                    <div>
                         <img src="" alt="">
                         <p>Lorem, ipsum dolor</p>
                     </div>
                 </div>
-                <div class="image-info">
-                    <div class="boxes">
+                <div class="boxes">
+                    <div>
                         <h3>Where does my donation go?</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum officia illum quisquam labore dolor impedit sapiente odio repellat vitae tempore ex distinctio, laborum et dicta hic? Ab, laudantium consectetur.</p>
                     </div>
-                    <div class="boxes">
+                    <div>
                         <img src="" alt="">
                         <p>Lorem, ipsum dolor</p>
                     </div>
                 </div>
             </section>
-            <a href="donation-form.html">Donate</a>
+            <div class="form-button">
+                <a href="donation-form.html" class="form-button">Donate</a>
+            </div>
         </main>
     </body>
 </html>

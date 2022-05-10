@@ -11,8 +11,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
         <script src="scripts.js"></script>
     </head>
-    <body>
+    <body class="ticket-donate">
         <header>
+            <div class="overlay toggle-nav"></div>
             <div class="menu-bars" onclick="toggleNav()">
                 <hr>
                 <hr>
@@ -30,7 +31,7 @@
             <img src="images/logo-white.svg" alt="Purple Penguin Project Logo">
         </header>
         <main>
-            <section>
+            <section class="different">
                 <div class="boxes">
                     <h3 class="ticket-heading">Option 1</h3>
                     <h4>$$$$$</h4>
@@ -52,7 +53,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </section>
-            <a href="ticket-form.html">Buy Now</a>
+            <div class="form-button">
+                <a href="ticket-form.html">Buy Now</a>
+            </div>
         </main>
     </body>
 </html>

@@ -23,18 +23,23 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.about-backstory>article').classList.toggle('show');
 	});
     document.querySelector('.about-hosts>h3').addEventListener('click', function(){
-		document.querySelector('.about-hosts>article').classList.toggle('show');
+		document.querySelector('.about-hosts>.image-info-a').classList.toggle('show');
+		document.querySelector('.about-hosts>.image-info-b').classList.toggle('show');
+		document.querySelector('.about-hosts>.image-info-c').classList.toggle('show');
 	});
 });
 document.addEventListener("DOMContentLoaded", function(){
     document.querySelector('.music>h3').addEventListener('click', function(){
-		document.querySelector('.music>article').classList.toggle('show');
+		document.querySelector('.music>.image-info-y').classList.toggle('show');
+		document.querySelector('.music>.image-info-z').classList.toggle('show');
 	});
     document.querySelector('.stand-up>h3').addEventListener('click', function(){
-		document.querySelector('.stand-up>article').classList.toggle('show');
+		document.querySelector('.stand-up>.image-info-y').classList.toggle('show');
+		document.querySelector('.stand-up>.image-info-z').classList.toggle('show');
 	});
     document.querySelector('.food>h3').addEventListener('click', function(){
-		document.querySelector('.food>article').classList.toggle('show');
+		document.querySelector('.food>.image-info-y').classList.toggle('show');
+		document.querySelector('.food>.image-info-z').classList.toggle('show');
 	});
 });
 document.addEventListener("DOMContentLoaded", function(){
@@ -45,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.contact-parking>article').classList.toggle('show');
 	});
     document.querySelector('.contact-hosts>h3').addEventListener('click', function(){
-		document.querySelector('.contact-hosts>article').classList.toggle('show');
+		document.querySelector('.contact-hosts>.host-one').classList.toggle('show');
+		document.querySelector('.contact-hosts>.host-two').classList.toggle('show');
+		document.querySelector('.contact-hosts>.host-three').classList.toggle('show');
 	});
 });
 

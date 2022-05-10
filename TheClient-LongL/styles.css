@@ -10,6 +10,7 @@ header{
 .menu-bars{
     width: 40px;
     padding: .5rem;
+    cursor: pointer;
 }
 .menu-bars hr{
     margin: .75rem 0;
@@ -19,9 +20,8 @@ header nav{
     background-color: white;
     position: fixed;
     width: 100%;
-    top: 10rem;
+    top: 12.2rem;
     left: -100%;
-    border: 1px solid #2B004A;
     transition-property: left;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
@@ -29,12 +29,31 @@ header nav{
 header nav a{
     display: block;
     color: #2B004A;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
     padding: .5rem;
-    border: 1px solid transparent;
+    border: 2px solid #2B004A;
+}
+header nav a:hover{
+    color: #0084B4;
+    border: 2px solid #0084B4;
 }
 header nav.show{
+    left: 0;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 12.2rem;
+    position: fixed;
+    background-color: #2B004A75;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    left: -100%;
+}
+.overlay.show{
     left: 0;
 }
 h1{
@@ -51,7 +70,138 @@ header img{
 }
 article{
     display: none;
+    background-color: white;
+    border: 2px solid #2B004A;
+    padding: 0 1rem 1rem;
 }
 article.show{
     display: block;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    color: #2B004A;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #FFDFF1;
+    width: 100%;
+}
+section{
+    background-color: #FFDFF1;
+    padding: 1rem;
+    margin: 3rem 0;
+}
+article a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: #2B004A;
+    padding: .5rem;
+}
+article a:hover{
+    background-color: #51008A;
+}
+.image-info-a, .image-info-b, .image-info-y, .host-one, .host-two{
+    margin: 0 0 1rem 0;
+}
+.home-penguins img{
+    max-width: 100%;
+    width: 15rem;   
+}
+.penguin-image{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    color: #2B004A;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+.galapagos, .erect-crested, .yellow-eyed, .northern-rockhopper{
+    padding: 0 0 1rem 0;
+    border-bottom: 2px solid #0084B4;
+}
+footer{
+    background-color: #FFDFF1;
+    padding: 3rem;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    background-color: #2B004A;
+    padding: .5rem 2rem;
+}
+footer a:hover{
+    background-color: #51008A;
+}
+.boxes{
+    background-color: white;
+    border: 2px solid #2B004A;
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+}
+.ticket-donate{
+    background-color: #FFDFF1;
+}
+.different{
+    background-color: #FFDFF1;
+    border: none;
+    padding: 0;
+    margin: 3rem 0;
+}
+.different h3{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.form-button{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3rem 0;
+}
+.form-button a{
+    color: white;
+    background-color: #2B004A;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+.form-button a:hover{
+    background-color: #51008A;
+}
+@media (min-width:603px){
+    header nav, .overlay{
+        top: 11.9rem;
+    }
+    @media (min-width:730px){
+        article{
+            display: block;
+            border: none;
+            padding: 0;
+        }
+        .home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .music, .stand-up, .food, .contact-location, .contact-parking, .contact-hosts{
+            cursor: auto;
+        }
+        body{
+            background-color: #FFDFF1;
+        }
+        h3{
+            text-align: left;
+            background-color: white;
+            margin: 0;
+        }
+        section{
+            background-color: white;
+            border: 2px solid #2B004A;
+            padding: 1.5rem 1rem;
+        }
+        @media (min-width:950px){
+            
+        }
+    }
 }
