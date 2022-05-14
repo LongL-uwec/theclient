@@ -13,7 +13,66 @@
     <body>
         <header class="form">
             <h2>Donation Form</h2>
-            <a href="donate.html">X</a>
+            <div class="x-out">
+                <a href="donate.html">X</a>
+            </div>
         </header>
+        <main>
+            <form>
+                <section class="display">
+                    <section class="donation">
+                        <h3>Donation Information</h3>
+                        <label for="amount" class="amount">Amount</label>
+                        <div class="money">
+                            <p>$</p>
+                            <input type="number" id="amount" class="amount-input">
+                        </div>
+                        <div class="select donation-select">
+                            <input type="checkbox" id="anon">
+                            <label for="anon">Make Donation Anonymous</label>
+                        </div>
+                        <div class="select donation-select">
+                            <input type="checkbox" id="updates">
+                            <label for="updates">Please Send Email Updates on Endangered Penguins</label>
+                        </div>
+                    </section>
+                    <section class="card-info">
+                        <h3>Card Information</h3>
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name">
+                        <label for="card-number">Card Number</label>
+                        <input type="number" id="card-number" class="card-number">
+                        <label for="exp-date">Expiration Date</label>
+                        <textarea id="exp-date">XX/XXXX</textarea>
+                        <label for="cvv">CVV Code</label>
+                        <input type="number" id="cvv" class="cvv">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="email-ver">Email Verification</label>
+                        <input type="email" id="email-ver">
+                    </section>
+                    <section class="billing-info">
+                        <h3>Billing Information</h3>
+                        <label for="address-one">Address Line 1</label>
+                        <input type="text" id="address-one">
+                        <label for="address-two">Address Line 2</label>
+                        <input type="text" id="address-two">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="city">
+                        <label for="zip-code">Zip Code</label>
+                        <input type="number" id="zip-code" class="zip-code">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" class="country">
+                        <label for="state">State</label>
+                        <input type="text" id="state" class="state">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </section>
+                </section>
+                <div class="buttons">
+                    <input type="submit">
+                </div>
+            </form>
+        </main>
     </body>
 </html>
