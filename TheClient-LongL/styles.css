@@ -70,7 +70,7 @@ header img{
     padding: 0;
     margin: 0;
 }
-.home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .music, .stand-up, .food, .contact-location, .contact-parking, .contact-hosts{
+.home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .morning, .afternoon, .evening, .food, .contact-location, .contact-parking, .contact-hosts{
     cursor: pointer;
 }
 article{
@@ -107,21 +107,65 @@ article a{
 article a:hover{
     background-color: #51008A;
 }
-.image-info-a, .image-info-b, .image-info-y, .host-one, .host-two{
+.image-info-a, .image-info-b, .image-info-x, .image-info-y, .host-one, .host-two{
     margin: 0 0 1rem 0;
 }
-.home-penguins img{
+.image-info-x img, .image-info-y img, .image-info-z img{
+    max-width: 100%;
+    width: 20rem;
+    margin: 1rem 0 0;
+}
+.vendor-img{
+    display: flex;
+    justify-content: center;
+}
+.home-penguins img, .home-donations img{
     max-width: 100%;
     width: 15rem;   
+}
+.don-amount{
+    font-size: 2rem;
+    padding: .75rem 0;
+    text-align: center;
+}
+.home-don-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.caption{
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    font-size: .75rem;
+    padding: 0 0 1rem;
+    min-width: 100%;
+}
+.home-backstory p{
+    padding: 0 0 1rem;
+}
+.vendor-grid{
+    display: grid;
+    grid-template-columns: fr fr;
+}
+.performer{
+    grid-column: 1/2;
+}
+.times{
+    grid-column: 2/3;
 }
 .penguin-image{
     display: flex;
     justify-content: center;
 }
 h4{
-    color: #2B004A;
+    color: black;
     font-size: 1.5rem;
     margin: 1rem 0 0 0;
+}
+p{
+    color: black;
 }
 .galapagos, .erect-crested, .yellow-eyed, .northern-rockhopper{
     padding: 0 0 1rem 0;
@@ -186,8 +230,24 @@ footer a:hover{
         border: none;
         padding: 0;
     }
-    .home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .music, .stand-up, .food, .contact-location, .contact-parking, .contact-hosts{
+    .home-donations, .home-backstory, .home-vendors, .home-penguins, .about-backstory, .about-hosts, .morning, .afternoon, .evening, .food, .contact-location, .contact-parking, .contact-hosts{
         cursor: auto;
+    }
+    .home-don-desktop{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .home-don-desktop p{
+        max-width: 90%;
+    }
+    .home-donations img{
+        min-width: 12rem;
+        max-width: 12rem;
+    }
+    .home-don-img{
+        padding: 1rem 0 0 1rem;
     }
     body{
         background-color: #FFDFF1;
@@ -204,6 +264,40 @@ footer a:hover{
     }
     .about-hosts{
         margin: 0 0 .5rem;
+    }
+    .heading{
+        text-align: center;
+        padding: 0 0 1rem;
+    }
+    .vendor-img{
+        display: unset;
+    }
+    .image-info-x, .image-info-z{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0 1rem;
+    }
+    .image-info-x, .image-info-y{
+        margin: 0;
+    }
+    .image-info-y{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        border-bottom: 2px solid #0084B4;
+        padding: 0 0 1rem;
+    }
+    .image-info-x{
+        border-bottom: 2px solid #0084B4;
+    }
+    .vendor-info-x, .vendor-info-z{
+        padding: 0 0 0 1rem;
+    }
+    .vendor-info-y{
+        padding: 0 1rem 0 0;
     }
 }
 @media (min-width:950px){
@@ -272,7 +366,7 @@ footer a:hover{
     .penguin-image{
         margin: 1rem 0 0;
         max-width: 100%;
-        min-width: 10rem;
+        min-width: 15rem;
     }
     .info-left, .info-right{
         text-align: center;

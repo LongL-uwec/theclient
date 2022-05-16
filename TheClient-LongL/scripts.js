@@ -29,15 +29,22 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 });
 document.addEventListener("DOMContentLoaded", function(){
-    document.querySelector('.music>h3').addEventListener('click', function(){
-		document.querySelector('.music>.image-info-y').classList.toggle('show');
-		document.querySelector('.music>.image-info-z').classList.toggle('show');
+    document.querySelector('.morning>h3').addEventListener('click', function(){
+		document.querySelector('.morning>.image-info-y').classList.toggle('show');
+		document.querySelector('.morning>.image-info-z').classList.toggle('show');
 	});
-    document.querySelector('.stand-up>h3').addEventListener('click', function(){
-		document.querySelector('.stand-up>.image-info-y').classList.toggle('show');
-		document.querySelector('.stand-up>.image-info-z').classList.toggle('show');
+    document.querySelector('.afternoon>h3').addEventListener('click', function(){
+		document.querySelector('.afternoon>.image-info-x').classList.toggle('show');
+		document.querySelector('.afternoon>.image-info-y').classList.toggle('show');
+		document.querySelector('.afternoon>.image-info-z').classList.toggle('show');
+	});
+	document.querySelector('.evening>h3').addEventListener('click', function(){
+		document.querySelector('.evening>.image-info-x').classList.toggle('show');
+		document.querySelector('.evening>.image-info-y').classList.toggle('show');
+		document.querySelector('.evening>.image-info-z').classList.toggle('show');
 	});
     document.querySelector('.food>h3').addEventListener('click', function(){
+		document.querySelector('.food>.image-info-x').classList.toggle('show');
 		document.querySelector('.food>.image-info-y').classList.toggle('show');
 		document.querySelector('.food>.image-info-z').classList.toggle('show');
 	});
