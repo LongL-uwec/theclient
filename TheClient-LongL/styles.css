@@ -123,6 +123,11 @@ article a:hover{
     max-width: 100%;
     width: 15rem;   
 }
+.current-don{
+    font-size: 1.5rem;
+    padding: .75rem 0;
+    text-align: center;
+}
 .don-amount{
     font-size: 2rem;
     padding: .75rem 0;
@@ -142,18 +147,28 @@ article a:hover{
     padding: 0 0 1rem;
     min-width: 100%;
 }
+.caption-diff{
+    font-style: italic;
+    font-weight: 200;
+    font-size: .75rem;
+    padding: 0;
+    min-width: 100%;  
+}
 .home-backstory p{
     padding: 0 0 1rem;
 }
 .vendor-grid{
     display: grid;
-    grid-template-columns: fr fr;
+    grid-template-columns: 250px auto;
 }
 .performer{
     grid-column: 1/2;
 }
 .times{
     grid-column: 2/3;
+}
+.food-grid{
+    margin: 0 0 1rem;
 }
 .penguin-image{
     display: flex;
@@ -236,11 +251,8 @@ footer a:hover{
     .home-don-desktop{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .home-don-desktop p{
-        max-width: 90%;
+        justify-content: center;
+        align-items: center;
     }
     .home-donations img{
         min-width: 12rem;
@@ -269,9 +281,6 @@ footer a:hover{
         text-align: center;
         padding: 0 0 1rem;
     }
-    .vendor-img{
-        display: unset;
-    }
     .image-info-x, .image-info-z{
         display: flex;
         flex-direction: row;
@@ -294,10 +303,10 @@ footer a:hover{
         border-bottom: 2px solid #0084B4;
     }
     .vendor-info-x, .vendor-info-z{
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 2.5rem;
     }
     .vendor-info-y{
-        padding: 0 1rem 0 0;
+        padding: 0 2.5rem 0 0;
     }
 }
 @media (min-width:950px){
@@ -366,7 +375,7 @@ footer a:hover{
     .penguin-image{
         margin: 1rem 0 0;
         max-width: 100%;
-        min-width: 15rem;
+        min-width: 10rem;
     }
     .info-left, .info-right{
         text-align: center;
@@ -402,31 +411,31 @@ footer a:hover{
 }
 @media (min-width:1150px){
     main{
-        margin: 0 1rem;
+        margin: 0 1.5rem;
     }
 }
 @media (min-width:1200px){
     main{
-        margin: 0 2rem;
+        margin: 0 3rem;
     }
 }
 @media (min-width:1250px){
     main{
-        margin: 0 3rem;
+        margin: 0 4.5rem;
     }
 }
 @media (min-width:1300px){
     main{
-        margin: 0 4rem;
+        margin: 0 6rem;
     }
 }
 @media (min-width:1350px){
     main{
-        margin: 0 5rem;
+        margin: 0 7.5rem;
     }
 }
 @media (min-width:1400px){
     main{
-        margin: 0 6rem;
+        margin: 0 9rem;
     }
 }
