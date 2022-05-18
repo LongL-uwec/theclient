@@ -113,6 +113,7 @@ article a:hover{
 .image-info-x img, .image-info-y img, .image-info-z img{
     max-width: 100%;
     width: 20rem;
+    min-width: 20rem;
     margin: 1rem 0 0;
 }
 .vendor-img{
@@ -186,6 +187,16 @@ p{
     padding: 0 0 1rem 0;
     border-bottom: 2px solid #0084B4;
 }
+.about-img{
+    display: flex;
+    justify-content: center;
+}
+.about-img img{
+    max-width: 100%;
+    width: 15rem;
+    min-width: 15rem;
+    margin: 1rem 0 0;
+}
 footer{
     background-color: #FFDFF1;
     padding: 3rem;
@@ -239,6 +250,32 @@ footer a:hover{
 .form-button a:hover{
     background-color: #51008A;
 }
+.donate-img, .don-flip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem 0 0;
+}
+.donate-img img, .don-flip img{
+    max-width: 100%;
+    width: 15rem;
+}
+.host-one, .host-two, .host-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.host-one h4, .host-two h4, .host-three h4{
+    padding: 0 0 1rem;
+}
+.host-one img, .host-two img, .host-three img{
+    padding: 1rem 0 0;
+    max-width: 100%;
+    width: 10rem;
+}
 @media (min-width:730px){
     article{
         display: block;
@@ -277,6 +314,28 @@ footer a:hover{
     .about-hosts{
         margin: 0 0 .5rem;
     }
+    .image-info-a, .image-info-b{
+        border-bottom: 2px solid #0084B4;
+        margin: 0;
+    }
+    .image-info-a, .image-info-c{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-info-a img, .image-info-c img{
+        margin: 0 0 1rem 1rem;
+    }
+    .image-info-b{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-info-b img{
+        margin: 0 1rem 0 0;
+    }
     .heading{
         text-align: center;
         padding: 0 0 1rem;
@@ -304,9 +363,36 @@ footer a:hover{
     }
     .vendor-info-x, .vendor-info-z{
         padding: 0 0 0 2.5rem;
+        max-width: 30rem;
     }
     .vendor-info-y{
         padding: 0 2.5rem 0 0;
+        max-width: 30rem;
+    }
+    .donate-img{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .donate-img p{
+        padding: 0 1rem 0 0;
+    }
+    .don-flip{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .don-flip p{
+        padding: 0 0 0 1rem;
+    }
+    .host-one, .host-two{
+        border-bottom: 2px solid #0084B4;
+        padding: 0 0 1rem;
+    }
+    .host-one, .host-two, .host-three{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
 @media (min-width:950px){
@@ -386,7 +472,7 @@ footer a:hover{
         justify-content: space-evenly;
         margin: 0 0 3rem;
     }
-    .option-one, .option-two, .option-three, .option-four{
+    .option-one, .option-two, .option-three, .option-four, .option-five, .option-six{
         width: 30rem;
     }
     .main-contact{
@@ -437,5 +523,15 @@ footer a:hover{
 @media (min-width:1400px){
     main{
         margin: 0 9rem;
+    }
+}
+@media (min-width:1450px){
+    main{
+        margin: 0 10.5rem;
+    }
+}
+@media (min-width:1500px){
+    main{
+        margin: 0 12rem;
     }
 }

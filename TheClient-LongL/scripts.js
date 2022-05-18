@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function(){
 		document.querySelector('.evening>.image-info-z').classList.toggle('show');
 	});
     document.querySelector('.food>h3').addEventListener('click', function(){
-		document.querySelector('.food>.image-info-x').classList.toggle('show');
-		document.querySelector('.food>.image-info-y').classList.toggle('show');
-		document.querySelector('.food>.image-info-z').classList.toggle('show');
+		document.querySelector('.food>.image-info-a').classList.toggle('show');
+		document.querySelector('.food>.image-info-b').classList.toggle('show');
+		document.querySelector('.food>.image-info-c').classList.toggle('show');
 	});
 });
 document.addEventListener("DOMContentLoaded", function(){
